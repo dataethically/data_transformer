@@ -1,0 +1,4 @@
+# Run transformations every hour at 5 minutes past the hour
+5 * * * * /scripts/run_transformations.sh >> /var/log/cron.log 2>&1
+
+# Empty line at the end is required for cron
