@@ -8,7 +8,6 @@ RUN mkdir -p /scripts
 
 # Copy scripts
 COPY scripts/transform_weather.sql /scripts/
-COPY scripts/transform_airquality.sql /scripts/
 COPY scripts/run_transformations.sh /scripts/
 
 # Make scripts executable
