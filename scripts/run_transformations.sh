@@ -6,8 +6,4 @@ echo "Starting data transformation at $(date)"
 echo "Transforming weather data..."
 PGPASSWORD=$DB_PASSWORD psql -h $DB_HOST -U $DB_USER -d $DB_NAME -f /scripts/transform_weather.sql
 
-# Run air quality data transformation
-echo "Transforming air quality data..."
-PGPASSWORD=$DB_PASSWORD psql -h $DB_HOST -U $DB_USER -d $DB_NAME -f /scripts/transform_airquality.sql
-
 echo "Transformation completed at $(date)"
